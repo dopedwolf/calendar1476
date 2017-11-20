@@ -1,0 +1,94 @@
+<div class="col-md-8 col-md-offset-2">
+  <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+          <label for="text">Event Title</label>
+          <input
+                  type="text"
+                  id="title"
+                  class="form-control"
+                  [ngModel]="message?.title"
+                  formControlName="title">
+      </div>
+      <div class="form-group">
+          <label for="date">Date [Ex: October 17]</label>
+          <input
+                  type="text"
+                  id="date"
+                  class="form-control"
+                  [ngModel]="message?.date"
+                  formControlName="date">
+      </div>
+      <div class="form-group">
+          <label for="description">Description [No more than five reasonably long sentences]</label>
+          <input
+                  type="text"
+                  id="description"
+                  class="form-control"
+                  [ngModel]="message?.description"
+                  formControlName="description">
+      </div>
+      <div class="form-group">
+          <label for="time">Time [Ex: 7pm]</label>
+          <input
+                  type="text"
+                  id="time"
+                  class="form-control"
+                  [ngModel]="message?.time"
+                  formControlName="time">
+      </div>
+      <div class="form-group">
+          <label for="venue">Venue</label>
+          <input
+                  type="text"
+                  id="venue"
+                  class="form-control"
+                  [ngModel]="message?.venue"
+                  formControlName="venue">
+      </div>
+      <div class="form-group">
+          <label for="address">Address [Ex: 123 Street Ave | No Zip, City, or State]</label>
+          <input
+                  type="text"
+                  id="address"
+                  class="form-control"
+                  [ngModel]="message?.address"
+                  formControlName="address">
+      </div>
+      <div class="form-group">
+          <label for="text">Admission [ Ex: $8 or FREE (if no admission) ]</label>
+          <input
+                  type="text"
+                  id="admission"
+                  class="form-control"
+                  [ngModel]="message?.admission"
+                  formControlName="admission">
+      </div>
+      <div class="form-group">
+          <label for="url">URL [Not Required. Url linking to more info or event page]</label>
+          <input
+                  type="text"
+                  id="url"
+                  class="form-control"
+                  [ngModel]="message?.url"
+                  formControlName="url">
+      </div>
+      <div class="form-group">
+          <label for="type">Type</label>
+          <select
+                  class="custom-select"
+                  type="text"
+                  id="type"
+                  [ngModel]="message?.type"
+                  class="form-control"
+                  formControlName="type">
+              <option selected>Event Type</option>
+              <option value="1">Arts</option>
+              <option value="2">Music</option>
+              <option value="3">Community</option>
+              <option value="3">Arts and Music</option>
+          </select>
+      </div>
+      <button class="btn btn-danger" type="button" (click)="onClear()">Clear</button>
+      <button class="btn btn-primary" type="submit">Save</button>
+    </form>
+</div>

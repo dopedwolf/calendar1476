@@ -1,0 +1,20 @@
+
+  <div class="eventContainer">
+    <p class="eventTitle">{{ message.title }}</p>
+    <p class="eventDescription">{{ message.description }}</p>
+    <div class="oneContainer">
+      <p class="eventVenue">{{ message.venue }}</p>
+      <p class="eventTime">{{ message.time }}</p>
+    </div>
+    <div class="twoContainer">
+      <p class="eventAddress">{{ message.address }}</p>
+      <p class="eventPrice">{{ message.admission }}</p>
+      <p class="eventDate">{{ message.date }}</p>
+    </div>
+  </div>
+  <footer class="eventControls">
+    <div class="configuration">
+      <a (click)="onEdit()">Edit</a>
+      <a (click)="onDelete()">Delete</a>
+    </div>
+  </footer>
