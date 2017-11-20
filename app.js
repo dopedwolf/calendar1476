@@ -11,7 +11,7 @@ var messageRoutes = require('./routes/messages');
 
 var app = express();
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://admin:admin@ds237855.mlab.com:37855/calendar', {useMongoClient: true});
+mongoose.connect('mongodb://admin2:admin2@ds237855.mlab.com:37855/calendar', {useMongoClient: true});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

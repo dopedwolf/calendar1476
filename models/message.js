@@ -8,7 +8,7 @@ var schema = new Schema({
     time: {type: String, required: true},
     venue: {type: String, required: true},
     address: {type: String, required: true},
-    admission: {type: String, required: true},
+    admission: {type: String, required: false},
     type: {type: String, required: true},
     url: {type: String, required: false},
     user: {type: Schema.Types.ObjectId, ref: 'User'}
