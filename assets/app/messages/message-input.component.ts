@@ -41,7 +41,16 @@ export class MessageInputComponent implements OnInit {
         } else {
           //creating
           const form = this.myForm;
-          const message = new Message(form.value.title, form.value.description, form.value.date, form.value.time, form.value.venue, form.value.address, form.value.admission, form.value.url,  form.value.type);
+          const message = new Message(
+            form.value.title,
+            form.value.description,
+            form.value.date,
+            form.value.time,
+            form.value.venue,
+            form.value.address,
+            form.value.admission,
+            form.value.type, 
+            form.value.url);
           this.messageService.addMessage(message)
           .subscribe(
             data => console.log(data),
