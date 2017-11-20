@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lora:700,700i|Alegreya+Sans');
 body {
-  padding: 50px;
+  padding: 30px 15px 50px 15px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -113,4 +113,10 @@ input.ng-invalid.ng-touched {
   margin-top: 15px;
   margin-bottom: 15px;
   margin-right: 2.7%;
+}
+
+@media (max-width: 768px) {
+  .item {
+    max-width: 100% !important;
+  }
 }
