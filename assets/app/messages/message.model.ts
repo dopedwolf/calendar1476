@@ -19,9 +19,9 @@ export class Message {
         this.time = time;
         this.venue = venue;
         this.address = address;
-        this.url = url;
         this.admission = admission;
         this.type = type;
+        this.url = url;
         this.messageId = messageId;
         this.userId = userId;
     }

@@ -26,9 +26,9 @@ export class MessageService {
                 result.obj.time,
                 result.obj.venue,
                 result.obj.address,
-                result.obj.url,
                 result.obj.admission,
                 result.obj.type,
+                result.obj.url,
                 result.obj._id,
                 null
               );
