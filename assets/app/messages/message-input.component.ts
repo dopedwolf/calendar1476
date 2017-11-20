@@ -28,9 +28,9 @@ export class MessageInputComponent implements OnInit {
           this.message.time = form.value.time;
           this.message.venue = form.value.venue;
           this.message.address = form.value.address;
-          this.message.url = form.value.url;
           this.message.admission = form.value.admission;
           this.message.type = form.value.type;
+          this.message.url = form.value.url;
           this.messageService.updateMessage(this.message)
             .subscribe(
               result => console.log(result)
