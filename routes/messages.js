@@ -8,7 +8,8 @@ router.post('/', function(req, res, next){
   var message = new Message({
     title: req.body.title,
     description: req.body.description,
-    date: req.body.date,
+    month: req.body.month,
+    day: req.body.day,
     time: req.body.time,
     venue: req.body.venue,
     address: req.body.address,
@@ -62,7 +63,8 @@ router.patch('/:id', function(req, res, next){
     }
     message.title = req.body.title;
     message.description = req.body.description;
-    message.date = req.body.date;
+    message.month = req.body.month;
+    message.day = req.body.day;
     message.time = req.body.time;
     message.venue = req.body.venue;
     message.address = req.body.address;

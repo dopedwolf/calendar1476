@@ -24,7 +24,8 @@ export class MessageInputComponent implements OnInit {
           //editing
           this.message.title = form.value.title;
           this.message.description = form.value.description;
-          this.message.date = form.value.date;
+          this.message.month = form.value.month;
+          this.message.day = form.value.day;
           this.message.time = form.value.time;
           this.message.venue = form.value.venue;
           this.message.address = form.value.address;
@@ -44,12 +45,13 @@ export class MessageInputComponent implements OnInit {
           const message = new Message(
             form.value.title,
             form.value.description,
-            form.value.date,
+            form.value.month,
+            form.value.day,
             form.value.time,
             form.value.venue,
             form.value.address,
             form.value.admission,
-            form.value.type, 
+            form.value.type,
             form.value.url);
           this.messageService.addMessage(message)
           .subscribe(
@@ -70,7 +72,8 @@ export class MessageInputComponent implements OnInit {
       this.myForm = new FormGroup({
         title: new FormControl(null, Validators.required),
         description: new FormControl(null, Validators.required),
-        date: new FormControl(null, Validators.required),
+        month: new FormControl(null, Validators.required),
+        day: new FormControl(null, Validators.required),
         time: new FormControl(null, Validators.required),
         venue: new FormControl(null, Validators.required),
         address: new FormControl(null, Validators.required),

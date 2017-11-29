@@ -4,7 +4,8 @@ var Schema = mongoose.Schema;
 var schema = new Schema({
     title: {type: String, required: true},
     description: {type: String, required: true},
-    date: {type: String, required: true},
+    month: {type: Mixed, required: true},
+    day: {type: Mixed, required: true},
     time: {type: String, required: true},
     venue: {type: String, required: true},
     address: {type: String, required: true},

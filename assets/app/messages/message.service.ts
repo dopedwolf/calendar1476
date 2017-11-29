@@ -22,7 +22,8 @@ export class MessageService {
               return new Message(
                 result.obj.title,
                 result.obj.description,
-                result.obj.date,
+                result.obj.month,
+                result.obj.day,
                 result.obj.time,
                 result.obj.venue,
                 result.obj.address,
@@ -47,7 +48,8 @@ export class MessageService {
                   transformedMessages.push(new Message(
                     message.title,
                     message.description,
-                    message.date,
+                    message.month,
+                    message.day,
                     message.time,
                     message.venue,
                     message.address,
